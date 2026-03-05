@@ -69,7 +69,7 @@ Open `http://localhost:8000` in your browser.
 
 ## 🖼️ Add Screenshot
 
-![](image.png)
+![](storage/uploads/image.png)
 
 ---
 
