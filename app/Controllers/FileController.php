@@ -10,18 +10,10 @@ class FileController
         $this->uploadConfig = require __DIR__ . '/../../config/upload.php';
     }
 
-    private function formatSize(int $bytes): string
-    {
-        if ($bytes >= 1048576) {
-            return number_format($bytes / 1048576, 2) . ' MB';
-        }
-        return number_format($bytes / 1024, 2) . ' KB';
-    }
-
     public function index(): void
     {
         $files = $this->fileModel->getAll();
-        include 'app/Views/files/index.php';
+        require __DIR__ . '/../Views/files/index.php';
     }
 
     public function upload(): void
